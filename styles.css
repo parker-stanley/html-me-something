@@ -22,22 +22,47 @@
   div.stage {
     padding-top: 10.5rem;
     padding-bottom: 6rem;
-    text-align: center;
+    text-align: right;
     color: black;
-    background-image: url("/assets/sanjuanwaterfront.jpg");
+    background-image: url("assets/sanjuanwaterfront.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
     background-size: cover;
   }
 
+/* Styling for the side by side content layout */
+.sidebyside img {
+    width: 650px;
+    height: 400px;
+}
+
+/* Styling for the column area */
   .column {
     float: left;
-    width: 33.33%;
+    width: 32%;
+    padding-left: .5em;
+    padding-right: .5em;
   }
 
   .row:after {
     content: "";
     display: table;
     clear: both;
+  }
+
+/* Styling for circular image formatting */
+  .circledimage {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  .circledimage img {
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
   }
