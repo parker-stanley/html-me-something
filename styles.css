@@ -1,0 +1,32 @@
+.topnav {
+    background-color: white;
+      overflow: hidden;
+      width: 100vw;
+    }
+  /*Style the li items to remove the underline and bullets*/
+  .topnav li {
+      list-style-type: none;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+  }
+
+  /* Styling for the Stage area */
+  div.stage {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    color: black;
+    background-image: url("...../assets/sanjuanwaterfront.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+  }
