@@ -30,3 +30,8 @@
     background-position: center center;
     background-size: cover;
   }
+
+  .column {
+    float: left;
+    width: 33.33%;
+  }
