@@ -1,3 +1,15 @@
+/* Font Syling */
+html,body{
+  font-family:Verdana,sans-serif;
+  font-size:15px;
+  line-height:1.5
+}
+h1,h2,h3,h4,h5,h6{
+  font-family:"Segoe UI",Arial,sans-serif;
+  font-weight:400;
+  margin:10px 0
+}
+
 .topnav {
     background-color: white;
       overflow: hidden;
@@ -18,23 +30,69 @@
       font-size: 17px;
   }
 
-  /* Styling for the Stage area */
-  div.stage {
-    padding-top: 10.5rem;
-    padding-bottom: 6rem;
-    text-align: right;
-    color: black;
-    background-image: url("assets/sanjuanwaterfront.jpg");
+  /* Create a Parallax Effect */
+  .bgimg-1{
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
     background-size: cover;
   }
+  
+  /* First image */
+  .bgimg-1 {
+    background-image: url('assets/sanjuanwaterfront.jpg');
+    min-height: 100%;
+  }
 
-/* Styling for the side by side content layout */
-.sidebyside img {
-    width: 650px;
-    height: 400px;
+  /* Styling for headlines */
+  .stage {
+    text-align: center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%)
+  }
+  .stage span{
+    color:#fff!important;
+    background-color:#000!important;
+    letter-spacing:4px
+    font-size:40px!important
+  }
+
+.row {
+  padding-top:20px!important;padding-bottom:20px!important; 
+  display: block;
+}
+
+/* Styling for Places */
+#places {
+  position: relative;
+  background-color: #F0EEA6;
+}
+.sidebyside-left{
+  position: relative;
+  width: 40%;
+  text-align: left;
+  padding-left: 20px;
+  display:inline-block;
+}
+.sidebyside-right{
+  position: relative;
+  width: 40%;
+  text-align: right;
+  display: inline-block;
+  padding-left: 140px;
+}
+.sidebyside-left-img{
+  float: left;
+  width: 600px;
+  padding-left: 100px;
+}
+.sidebyside-right-img{
+  float: right;
+  width: 600px;
+  position: relative;
 }
 
 /* Styling for the column area */
@@ -49,11 +107,11 @@
     content: "";
     display: table;
     clear: both;
-  }
+  } 
 
 /* Styling for circular image formatting */
   .circledimage {
-    display: inline-block;
+    display: black
     position: relative;
     width: 200px;
     height: 200px;
@@ -62,7 +120,25 @@
   }
   
   .circledimage img {
-    width: auto;
     height: 100%;
-    margin-left: -50px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+
+  /* Styling for "story" section */
+  .centeredcol {
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    opacity: 1;
+    width: 500px;
+    margin-left: 33%;
+  } 
+  .background-img{
+    background-image: url("assets/la-estacion-hero.jpg");
+    background-repeat: no-repeat;
+    height: 300px;
   }
+

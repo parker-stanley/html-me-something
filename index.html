@@ -5,7 +5,6 @@
    </head>
 
    <body>
-
     <header>
         <nav class="topnav">
             <ul>
@@ -17,22 +16,29 @@
     </header>
 
     <main>
-        <div class="stage">
-            <h1>Planning a trip to Puerto Rico</h1>
-            <h2>Welcome to paradise</h2>
+        <!-- First Parallax Image with Logo Text -->
+        <div class="bgimg-1">
+            <div class="stage">
+                <span>Planning a trip to Puerto Rico</span>
+            </div>
         </div>
-
-        <div class="sidebyside" id="places">
-            <article>
-                <img src="assets/old-san-juan.jpg">
+  
+        <!-- Container (Places Section) -->
+        <div id="places">
+           <div class="row">
+            <article class="sidebyside-left">
                 <h3>Old San Juan</h3>
                 <p>Locals say that Old San Juan is one place you have to visit in Puerto Rico. Beautiful and romantic, this area is packed with colonial architecture, cobblestone streets, Spanish forts, and legendary restaurants. Well-traveled by tourists, it's a place where some local insights can come in handy.</p>
             </article>
-            <article>
-                <img src="assets/pr-beach.jpeg">
-                <h3>Vieques</h3>
-                <p>This little sleepy island has been receiving much attention in the past few years. Although most travelers come here for the beaches, this islands offers so much more.</p>
-            </article>
+            <img src="assets/oldsanjuan.jpg" class="sidebyside-left-img">
+           </div>
+            <div class="row">
+                <img src="assets/pr-beach.jpeg" class="sidebyside-right-img">
+                <article class="sidebyside-right">
+                    <h3>Vieques</h3>
+                    <p>This little sleepy island has been receiving much attention in the past few years. Although most travelers come here for the beaches, this islands offers so much more.</p>
+                </article>
+            </div>
         </div>
 
         <div class="row" id="activities">
@@ -53,20 +59,12 @@
             </div>
         </div>
 
-        <div class="story" id="dining">
-            <div class="circledimage"><img src="assets/pr-food.jpg"></div>
-            <article>
-                <h3>Culinary delights</h3>
-                <p>Thanks to its inventive and visionary chefs, myriad cultural influences, and an incredible natural bounty, the food in Puerto Rico is as exciting and diverse as the island itself. In fact, there's so much good food here that anyone who settles for mediocre resort fare instead of sampling the island's incredible culinary offerings should not be allowed on to an airplane to leave until they do. Whether you're after homestyle comida criolla, fresh-off-the-boat seafood, something elegant paired with a beautiful French wine or boundary-pushing gastronomy, there's a restaurant in Puerto Rico to suit your taste, mood, or price point.</p>
-            </article>
+        <div class="row background-img" id="dining">
+            <h3 class="centeredcol">Culinary delights</h3>
+            <p class="centeredcol">Thanks to its inventive and visionary chefs, myriad cultural influences, and an incredible natural bounty, the food in Puerto Rico is as exciting and diverse as the island itself. In fact, there's so much good food here that anyone who settles for mediocre resort fare instead of sampling the island's incredible culinary offerings should not be allowed on to an airplane to leave until they do. Whether you're after homestyle comida criolla, fresh-off-the-boat seafood, something elegant paired with a beautiful French wine or boundary-pushing gastronomy, there's a restaurant in Puerto Rico to suit your taste, mood, or price point.</p>
         </div>
 
     </main>
-
-    <footer>
-
-    </footer>
-
    </body>
 
 </html>
